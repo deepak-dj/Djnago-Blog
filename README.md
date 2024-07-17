@@ -17,6 +17,7 @@ sudo apt update
 sudo apt install docker.io -y
 sudo apt install docker-compose -y
 sudo apt install docker-compose-v2 -y
+sudo docker --version
 ```
 
 ## Getting Started
@@ -24,7 +25,7 @@ sudo apt install docker-compose-v2 -y
 To run the application, use the following command in your terminal:
 
 ```bash
-docker compose up
+sudo docker compose up
 ```
 
 ## API Documentation
