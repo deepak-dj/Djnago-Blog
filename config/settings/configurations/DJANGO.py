@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'blog_app',
     # third party package
     'rest_framework',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
