@@ -14,3 +14,7 @@ To run the application, use the following command in your terminal:
 
 ```bash
 docker compose up
+
+## API Documentation
+
+Refer to the Swagger API documentation for details of API routes, request bodies, and response bodies at: [http://127.0.0.1:8000]
