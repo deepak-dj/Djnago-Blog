@@ -5,10 +5,10 @@ from blog_app.models import User
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True)
-
+    confirm_password = serializers.CharField(write_only=True, required=True)
     class Meta:
         model = User
-        fields = ('username', 'email', 'password')
+        fields = ('username', 'email', 'password', 'confirm_password')
         extra_kwargs = {
             'password': {'write_only': True}
         }
@@ -21,6 +21,11 @@ class UserSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
+
+    def validate(self, attrs):
+        if attrs['password'] != attrs['confirm_password']:
+            raise serializers.ValidationError({"detail": "Passwords do not match."})
+        return attrs
 
 
 class PostSerializer(serializers.ModelSerializer):
