@@ -8,7 +8,7 @@ Also the user who created the post or comment can only have access to update and
 - Docker must be installed on your system. If you don't have Docker installed, you can download it from [Docker's official website](https://www.docker.com/get-started).
 - Python and pip should be installed on your system.
 
-### Installing Docker and Docker Compose **Ubuntu**
+### Installing Docker and Docker Compose in **Ubuntu**
 
 For Ubuntu, run the following commands:
 
