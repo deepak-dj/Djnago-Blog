@@ -14,6 +14,7 @@ To run the application, use the following command in your terminal:
 
 ```bash
 docker compose up
+```
 
 ## API Documentation
 
