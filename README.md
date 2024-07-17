@@ -25,7 +25,12 @@ sudo docker --version
 To run the application, use the following command in your terminal:
 
 ```bash
-sudo docker compose up
+sudo docker compose up -d
+```
+**OR**
+
+```bash
+sudo docker-compose up -d
 ```
 
 ## API Documentation
