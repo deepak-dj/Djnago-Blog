@@ -11,14 +11,14 @@ class TestUserRegister(TestCase):
         self.user = UserFactory()
         self.user.set_password('securepassword')
         self.user.save()
-        # self.mock_user = {"email": "xyz@g.com", "password": "passwd"}
 
     def test_register_user(self):
         url = reverse("register-list")
         payload = {
             "username": "ab",
             "email": "ab@y.com",
-            "password": "password"
+            "password": "password",
+            "confirm_password": "password"
         }
         response = self.client.post(url, data=payload)
         self.assertEqual(response.status_code, 201)
