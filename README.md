@@ -1,7 +1,7 @@
 # Blog App
 
 This is a simple Blog App that allows users to create, read, update, and delete blog posts and comments.
-Also the user who created the post or comment can only have access to update and delete the post or comments.
+Also the user who created the post or comment can only have access to update and delete.
 
 ## Prerequisites
 
