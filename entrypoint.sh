@@ -12,6 +12,4 @@ else
     exit 1
 fi
 
-echo "All test passed successfully !!!"
-
 exec python manage.py runserver 0.0.0.0:8000
