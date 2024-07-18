@@ -13,7 +13,7 @@ Also the user who created the post or comment can only have access to update and
 For Ubuntu, run the following commands:
 
 ```bash
-sudo apt update
+sudo apt update -y
 sudo apt install docker.io -y
 sudo apt install docker-compose -y
 sudo apt install docker-compose-v2 -y
