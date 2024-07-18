@@ -11,7 +11,10 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Blog API",
         default_version='v1',
-        description="API documentation for the Blog App",
+        description="""
+                <h2> Base URL: <strong>127.0.0.1:8000/api</strong> </h2>
+                <p><strong>This is the base URL for all API endpoints. Use this base URL when making API requests.</strong></p>
+                """,
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
