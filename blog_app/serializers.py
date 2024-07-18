@@ -1,7 +1,9 @@
 from blog_app.models import Post, Comment
 from rest_framework import serializers
 from blog_app.models import User
+import logging
 
+logger = logging.getLogger(__name__)
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True)
@@ -20,6 +22,9 @@ class UserSerializer(serializers.ModelSerializer):
         )
         user.set_password(validated_data['password'])
         user.save()
+        logger.info(
+            "User has registered | email: {}, username: {}". format(validated_data['email'], validated_data['email'])
+        )
         return user
 
     def validate(self, attrs):
