@@ -35,4 +35,4 @@ sudo docker-compose up -d
 
 ## API Documentation
 
-Refer to the Swagger API documentation for details of API routes, request bodies, and response bodies at: (localhost)[http://127.0.0.1:8000] once the application starts running.
+Refer to the Swagger API documentation for details of API routes, request bodies, and response bodies at: [localhost](http://127.0.0.1:8000) once the application starts running.
