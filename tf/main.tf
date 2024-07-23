@@ -24,7 +24,7 @@ resource "docker_container" "blog_ctr" {
     env = [
               "DATABASE_NAME=blog_db",
               "DATABASE_USER=postgres",
-              "DATABASE_PASSWORD="root",
+              "DATABASE_PASSWORD=root",
               "DATABASE_HOST=db",
               "DATABASE_PORT=5432"
         ]
