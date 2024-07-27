@@ -30,10 +30,10 @@ jobs:
         # python manage.py test
         # pip install docker-compose
 
-    - name: Build Docker Image
-      run: |
-        pip install docker-compose
-        docker-compose build
+    # - name: Build Docker Image
+    #   run: |
+    #     pip install docker-compose
+    #     docker-compose build
 
     - name: Run Docker Compose
       run: docker-compose up -d
